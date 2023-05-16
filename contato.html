@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Barbearia Robson´s | Cadastros</title>
+  <meta name="description" content="Contato.">
+
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./rating.css">
+</head>
+
+<div>
+  <body id="bicicletas">
+   
+      
+        <nav aria-label="primaria">
+          <ul class="header-menu font-1-m cor-0">
+            <li><a href="./pesquisar.html">Pesquisar</a></li>
+            <li><a href="./contato.html">Cadastros</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+</body>
+<body id="contato">
+
+  <body id="bicicletas">
+    <header class="header-bg">
+      <div class="header container">
+        <a href="./">
+          <img src="./img/WhatsApp Image 2023-04-05 at 11.02.54.jpeg" alt="Bikcraft">
+        </a>
+</div>
+  
+  <!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionar Foto</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		.input-file {
+			margin-bottom: 20px;
+		}
+		
+		.preview {
+			max-width: 300px;
+			max-height: 300px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Selecionar Foto</h1>
+		<input type="file" id="foto" class="input-file">
+		<img id="preview" class="preview">
+	</div>
+	
+	<script>
+		const inputFoto = document.getElementById('foto');
+		const previewFoto = document.getElementById('preview');
+		
+		inputFoto.addEventListener('change', () => {
+			const file = inputFoto.files[0];
+			const reader = new FileReader();
+			
+			reader.onload = () => {
+				previewFoto.src = reader.result;
+			}
+			
+			if (file) {
+				reader.readAsDataURL(file);
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+      </section>
+      <section class="contato-formulario" aria-label="Formulário">
+        <form class="form" action="./contato.html">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </div>
+          <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(35) 9999-9999">
+          </div>
+          <div class="col-2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com">
+          </div>
+          <div class="col-2">
+            <label for="data">Nascimento:</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          
+          <div class="col-2">
+            <label for="mensagem">Avaliação:</label>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="Qual a sua avaliação?"></textarea>
+          </div>
+          
+          
+          <div>
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <title>Pré-avaliação</title>
+                <style>
+                  label {
+                    display: inline-block;
+                    width: 2em;
+                    text-align: center;
+                  }
+                </style>
+              </head>
+             
+             
+                
+                <div class="rating">
+                  <input type="radio" id="star1" name="rating" value="5">
+                  <label for="star1" title="5 Estrelas"></label>
+                  <input type="radio" id="star2" name="rating" value="4">
+                  <label for="star2" title="4 Estrelas"></label>
+                  <input type="radio" id="star3" name="rating" value="3">
+                  <label for="star3" title="3 Estrelas"></label>
+                  <input type="radio" id="star4" name="rating" value="2">
+                  <label for="star4" title="2 Estrelas"></label>
+                  <input type="radio" id="star5" name="rating" value="1">
+                  <label for="star5" title="1 Estrela"></label>
+                </div>
+                <div>
+              
+
+
+                  
+              </body>
+            </html>
+          </div>
+          <!DOCTYPE html>
+                  <html>
+                    <head>
+                      <title>Barbearia</title>
+                      <style>
+                        label {
+                          display: inline-block;
+                          width: 2em;
+                          text-align: center;
+                        }
+                      </style>
+                    </head>
+                   
+                   
+                      
+                     
+                    </body>
+                  </html>
+                </div>
+      
+                <button class="botao col-8"
+                  onclick="exibirMensagem()">
+                  Registrar</button>
+              </form>
+            </section>
+                    
+            <script>
+              function exibirMensagem() {
+                alert('Encerrado');
+              }
+            </script>
+        </form>
+      </section>
+     
+    
+          </div>
+  </main>
+  
+</html>
