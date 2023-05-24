@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     // Realiza a requisição AJAX
     $.ajax({
-      url: '../core/deletar.php',
+      url: '../core/consulta.php',
       method: 'POST',
       data: { cpf: cpf },
       success: function (response) {
