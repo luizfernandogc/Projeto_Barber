@@ -1,0 +1,131 @@
+.rating {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.rating input {
+  display: none;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+.rating label {
+  cursor: pointer;
+  width: 20%;
+  font-size: 2em;
+  color: #ddd;
+  text-align: center;
+}
+
+.rating label:before {
+  content: "★";
+}
+
+.rating input:checked ~ label {
+  color: #f70;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #f70;
+}
+  label {
+                  display: inline-block;
+                  width: max-content;
+                  text-align: center;
+                }
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .input-file {
+    margin-bottom: 20px;
+  }
+  
+  .preview {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+  .mb-3{
+    grid-column: span 2;
+  }
+.btn-primary{
+    display: inline-block;
+    padding: 16px 32px;
+     border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: var(--cor-p5);
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+}
+ .datanasc{
+  width: 32%;
+ }
+ .fdata{
+  padding: 12px;
+ }
+ .rating label {
+  cursor: pointer;
+  width: 1em;
+  font-size: 2em;
+  color: #ddd;
+  text-align: center;
+}
+.form input[type="text"], .form input[type="email"],.form input[type="date"], .form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: white;
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato-dados, .contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cpf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.cpf label {
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+  width: max-content;
+}
+.cpf label{
+ 
+    align-items: center!important;
+    margin-left: 15px!important;
+    display: inline-flex!important;
+    font: 400 1rem/1.5 "Poppins", sans-serif!important;
+    margin-bottom: 4px!important;}
+    label span{
+      margin: 10px;
+    }
+
+
