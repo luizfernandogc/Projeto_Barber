@@ -70,9 +70,9 @@ ul {
   }
   
   .preview {
+    padding-top: 50px;
     max-width: 300px;
     max-height: 300px;
-    margin-bottom: 20px;
   }
   .mb-3{
     grid-column: span 2;
@@ -88,11 +88,7 @@ ul {
     max-width: max-content;
     border: none;
     cursor: pointer;
-    color: #fff;
-    background-color: #0a58ca;
-    border-color: #0a53be
 }
-
  .datanasc{
   width: 32%;
  }

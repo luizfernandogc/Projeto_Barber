@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Barbearia Robson´s</title>
+  <meta name="description" content="Contato.">
+
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="contato">
+  <header class="header-bg">
+    <nav aria-label="primaria">
+      <ul class="header-menu font-1-m cor-0">
+        <li><a href="./avaliacao.html">Cadastrar</a></li>
+        <li><a href="./pesquisar.html">Pesquisar</a></li>
+        <li><a href="./Alterar.html">Alterar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--div class="header container">
+    <a href="./">
+      <img src="./img/logo.jpeg" alt="Bikcraft">
+    </a>
+  </div-->
+
+  <div class="contato-formulario form text-center" aria-label="Formulário">
+    <div class="form">
+      <div class="row">
+        <div class="col">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </div>
+        <div class="col">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome">
+        </div>
+      </div>
+      <div class="row">
+      <div class="col">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Seu CPF">
+      </div>
+      <div class="col">
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="celular" name="telefone" placeholder="(35) 9999-9999">
+      </div>
+      <div class="col">
+        <label for="sexo">Sexo:</label>
+        <input type="text" id="sexo" name="sexo" placeholder="Seu sexo">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-6">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="contato@email.com">
+      </div>
+      <div class="col-3">
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+      </div>
+        <div class="col-3">
+        <label for="foto" class="form-label">Foto:</label>
+        <input type="file" id="foto" name="foto" class="form-control">
+        <img id="preview" class="preview">
+      </div>
+      </div>
+      <div class="col-2">
+        <button class="btn-primary col-8" id="registrar">Registrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/cliente.js"></script>
+  <script>
+    const inputFoto = document.getElementById('foto');
+    const previewFoto = document.getElementById('preview');
+
+    inputFoto.addEventListener('change', () => {
+      const file = inputFoto.files[0];
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        previewFoto.src = reader.result;
+      }
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+
+</html>
