@@ -1,12 +1,5 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 @import "./tema.css";
 @import "./header.css";
 @import "./custom.css";
-@import "./rating.css";/*
-@import "./global/global.css";
-@import "./utilidades/tipografia.css";
-@import "./utilidades/cores.css";
- Utilidades 
-@import "./utilidades/componentes.css";
-@import "./utilidades/formulario.css";*/
-
+@import "./rating.css";

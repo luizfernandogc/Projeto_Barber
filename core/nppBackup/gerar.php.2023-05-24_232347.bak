@@ -41,12 +41,6 @@ function insertClientesData($conn) {
 			if ($sexo == '1'){
 				$sexo = 'HOMEM';
 			};
-			if ($sexo == '2'){
-				$sexo = 'MUIE';
-			};
-			if ($sexo == '3'){
-				$sexo = 'NAO ESPECIFICADO';
-			};
             echo "Sexo: $sexo<br>";
             echo "Débitos: $debitos<br>";
             echo "Celular: $celular<br>";

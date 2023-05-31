@@ -39,13 +39,7 @@ function insertClientesData($conn) {
             echo "Sobrenome: $sobrenome<br>";
             echo "CPF: $cpf<br>";
 			if ($sexo == '1'){
-				$sexo = 'HOMEM';
-			};
-			if ($sexo == '2'){
-				$sexo = 'MUIE';
-			};
-			if ($sexo == '3'){
-				$sexo = 'NAO ESPECIFICADO';
+				$sexo = 'HOMEM'
 			};
             echo "Sexo: $sexo<br>";
             echo "Débitos: $debitos<br>";

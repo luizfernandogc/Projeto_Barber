@@ -88,7 +88,11 @@ ul {
     max-width: max-content;
     border: none;
     cursor: pointer;
+    color: #fff;
+    background-color: #0a58ca;
+    border-color: #0a53be
 }
+
  .datanasc{
   width: 32%;
  }
