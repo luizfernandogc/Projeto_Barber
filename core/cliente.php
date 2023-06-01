@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nome = $_POST["nome"];
   $sobrenome = $_POST["sobrenome"];
   $sexo = $_POST["sexo"];
-  $debitos = $_POST["debitos"];
+  $debitos = "0";
   $celular = $_POST["celular"];
   $email = $_POST["email"];
   $foto = $_POST["foto"];
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     // Insere os dados na tabela CLIENTES
     $sql = "INSERT INTO CLIENTES (CPF, NOME_CLIENTE, SOBRENOME_CLIENTE, SEXO, DEBITOS, CELULAR, EMAIL, FOTO_CLIENT) 
-            VALUES ('$cpf', '$nome', '$sobrenome', '$sexo', '$debitos', '$celular', '$email', '$foto')";
+            VALUES ('$cpf','$nome', '$sobrenome', '$sexo', '$debitos', '$celular', '$email', '$foto')";
 
     if ($conn->query($sql) === TRUE) {
       // Dados inseridos com sucesso

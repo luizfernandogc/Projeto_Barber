@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $('#registrar').click(function () {
-    const cpf = $('#CPF').val();
     const nome = $('#nome').val();
     const sobrenome = $('#sobrenome').val();
+    const cpf = $('#cpf').val();
     const sexo = $('#sexo').val();
     const debitos = $('#debitos').val();
-    const celular = $('#telefone').val();
+    const celular = $('#celular').val();
     const email = $('#email').val();
     const foto = $('#foto').val();
 
