@@ -2,10 +2,10 @@ $(document).ready(function () {
   $('#registrar').click(function () {
     const nome = $('#nome').val();
     const sobrenome = $('#sobrenome').val();
-    const cpf = $('#cpf').val();
+    let cpf = $('#cpf').val();
     const sexo = $('#sexo').val();
     const debitos = $('#debitos').val();
-    const celular = $('#celular').val();
+    let celular = $('#celular').val();
     const email = $('#email').val();
     const foto = $('#foto').val();
 
@@ -13,7 +13,12 @@ $(document).ready(function () {
       alert('Por favor, preencha todos os campos obrigatórios.');
       return;
     }
-
+     // Remover formatação do campo CPF e do Campo celular
+     cpf = cpf.replace(/\D/g, '');
+     celular = celular.replace(/\D/g, '');
+     // Atualizar o valor do campo CPF sem a formatação
+     $('#cpf').val(cpf);
+     $('cpf').val(celular);
     // Realiza a requisição AJAX
     $.ajax({
       url: '../core/cliente.php',

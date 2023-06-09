@@ -102,7 +102,7 @@ ul {
   color: #ddd;
   text-align: center;
 }
-.form input[type="text"], .form input[type="email"],.form input[type="date"], .form textarea {
+.form input[type="text"], .form input[type="email"],.form input[type="date"], .form textarea,.form select {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background: white;
   border: 1px solid var(--cor-2);

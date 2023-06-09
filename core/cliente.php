@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = "Erro: CPF já cadastrado";
   } else {
     // Insere os dados na tabela CLIENTES
-    $sql = "INSERT INTO CLIENTES (CPF, NOME_CLIENTE, SOBRENOME_CLIENTE, SEXO, DEBITOS, CELULAR, EMAIL, FOTO_CLIENT) 
+    $sql = "INSERT INTO CLIENTES (CPF, NOME_CLIENTE, SOBRENOME_CLIENTE, ID_SEXO, DEBITOS, CELULAR, EMAIL, FOTO_CLIENT) 
             VALUES ('$cpf','$nome', '$sobrenome', '$sexo', '$debitos', '$celular', '$email', '$foto')";
 
     if ($conn->query($sql) === TRUE) {
