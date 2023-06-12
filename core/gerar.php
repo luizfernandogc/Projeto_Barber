@@ -13,7 +13,6 @@ function generateRandomCPF() {
 function insertClientesData($conn) {
     $nomes = array("João", "Maria", "Pedro", "Ana", "José");
     $sobrenomes = array("Silva", "Santos", "Oliveira", "Souza", "Pereira");
-    $sexos = array("Masculino", "Feminino");
     $emailProviders = array("gmail.com", "hotmail.com", "yahoo.com", "outlook.com");
 
     // Quantidade de registros a serem gerados
@@ -23,15 +22,15 @@ function insertClientesData($conn) {
         $nome = $nomes[array_rand($nomes)];
         $sobrenome = $sobrenomes[array_rand($sobrenomes)];
         $cpf = generateRandomCPF();
-        $sexo = $sexos[array_rand($sexos)];
+        $ID_SEXO = mt_rand(1, 10);
         $debitos = mt_rand(0, 1000);
         $celular = mt_rand(10000000000, 99999999999);
         $email = strtolower($nome . "." . $sobrenome . "@" . $emailProviders[array_rand($emailProviders)]);
         $foto = "cliente" . ($i + 1) . ".jpg"; // Nomes fictícios de arquivos de fotos
 
         // SQL de inserção
-        $sql = "INSERT INTO CLIENTES (NOME_CLIENTE, SOBRENOME_CLIENTE, CPF, SEXO, DEBITOS, CELULAR, EMAIL, FOTO_CLIENT) 
-                VALUES ('$nome', '$sobrenome', '$cpf', '$sexo', $debitos, '$celular', '$email', '$foto')";
+        $sql = "INSERT INTO CLIENTES (NOME_CLIENTE, SOBRENOME_CLIENTE, CPF, ID_SEXO, DEBITOS, CELULAR, EMAIL, FOTO_CLIENT) 
+                VALUES ('$nome', '$sobrenome', '$cpf', '$ID_SEXO', $debitos, '$celular', '$email', '$foto')";
 
         // Executa a instrução SQL no banco de dados
         if ($conn->query($sql) === TRUE) {
@@ -39,7 +38,7 @@ function insertClientesData($conn) {
             echo "Nome: $nome<br>";
             echo "Sobrenome: $sobrenome<br>";
             echo "CPF: $cpf<br>";
-            echo "Sexo: $sexo<br>";
+            echo "Sexo: $ID_SEXO<br>";
             echo "Débitos: $debitos<br>";
             echo "Celular: $celular<br>";
             echo "Email: $email<br>";
